@@ -70,6 +70,8 @@ By combining a broker (e.g., Mosquitto), a database (InfluxDB), and a visualizat
 1. **Install and Configure Home Assistant**:
    - Ensure you have an MQTT broker running (e.g., Mosquitto).
    - Add the MQTT integration in Home Assistant via the settings.
+  
+   Visit the [Step by Step Installation Guide for installing on Hyper-v](https://github.com/koenraadhaedens/MQTTdemo/blob/main/setup-home-assistant-for-demo.md).
 
 2. **Define MQTT Sensors**:  
    In your `configuration.yaml`, define the data you receive from your machines as sensors:

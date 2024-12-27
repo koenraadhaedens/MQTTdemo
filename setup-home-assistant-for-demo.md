@@ -18,7 +18,7 @@ Here's a simple step-by-step guide to set up **Home Assistant** on a Hyper-V vir
 ---
 
 #### **2. Download the Home Assistant `.vhdx` File**
-   - Visit the [Home Assistant installation page](https://www.home-assistant.io/installation/windows/).
+   - 
    - Download the **VHDX** version of the disk image.
 
 ---

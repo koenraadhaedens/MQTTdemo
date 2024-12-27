@@ -50,6 +50,8 @@ By combining a broker (e.g., Mosquitto), a database (InfluxDB), and a visualizat
 
 # Simple Demo Setup with Home Assistant
 
+![Dashboard](https://github.com/koenraadhaedens/MQTTdemo/blob/main/images/tempdashboard.png)
+
 **Home Assistant** can be used for MQTT-based machine visualizations, depending on your requirements. While Home Assistant is primarily designed for home automation, it is flexible enough to support other IoT applications, such as visualizing machine data through MQTT.
 
 ### How Does It Work with Home Assistant?

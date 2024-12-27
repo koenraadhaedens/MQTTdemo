@@ -38,6 +38,7 @@ Here's a simple step-by-step guide to set up **Home Assistant** on a Hyper-V vir
       - **Network:** Attach to a virtual switch (you may need to create one first in Virtual Switch Manager).
       - **Hard Disk:** Choose the option to use an existing disk and browse to select the `.vhdx` file you downloaded.
 
+![Hyper-v vm](https://github.com/koenraadhaedens/MQTTdemo/blob/main/images/hypervvm.png)
 ---
 
 #### **5. Adjust Virtual Machine Settings (Optional)**

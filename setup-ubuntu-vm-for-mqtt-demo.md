@@ -5,7 +5,14 @@ Here's a step-by-step guide to set up an MQTT message system using Mosquitto bro
     ```bash
     sudo apt update
     sudo apt install mosquitto mosquitto-clients
-    ```
+    sudo mosquitto_passwd -c /etc/mosquitto/passwd hassio
+    sudo nano /etc/mosquitto/mosquitto.conf
+        add following lines to config. Press ctrl O and enter to save and press ctrl X to exit nano
+
+            allow_anonymous false
+            password_file /etc/mosquitto/passwd
+
+        ```
 
 2. **Start and enable Mosquitto service**:
     ```bash
@@ -13,16 +20,6 @@ Here's a step-by-step guide to set up an MQTT message system using Mosquitto bro
     sudo systemctl enable mosquitto
     ```
 
-3. **Test Mosquitto installation**:
-    Open two terminal windows. In the first terminal, subscribe to a test topic:
-    ```bash
-    mosquitto_sub -h localhost -t test
-    ```
-    In the second terminal, publish a message to the test topic:
-    ```bash
-    mosquitto_pub -h localhost -t test -m "Hello, MQTT"
-    ```
-    You should see the message appear in the first terminal[1](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-18-04).
 
 ### Step 2: Install and Configure Telegraf
 1. **Install Telegraf**:

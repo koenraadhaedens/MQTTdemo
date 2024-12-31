@@ -22,7 +22,18 @@ Here's a step-by-step guide to set up an MQTT message system using Mosquitto bro
 
 ### Step 2: Install and Configure InfluxDB2
 
-
+1. **Install InFluxDB2**
+    ```bash
+    sudo wget -q https://repos.influxdata.com/influxdata-archive_compat.key
+    sudo gpg --with-fingerprint --show-keys ./influxdata-archive_compat.key
+    sudo cat influxdata-archive_compat.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg > /dev/null
+    sudo echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
+    sudo apt-get update
+    sudo apt install influxdb2 -y
+    sudo systemctl start influxdb
+    sudo systemctl enable influxdb
+    ```
+Go to http://<your ip>:8086 to configure InfluxDB2
 
 ### Step 3: Install and Configure Telegraf
 1. **Install Telegraf**:

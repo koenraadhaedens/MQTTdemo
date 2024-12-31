@@ -48,11 +48,38 @@ Go to http://<your ip>:8086 to configure InfluxDB2
     sudo nano /etc/telegraf/telegraf.conf
     ```
     Add the following configuration to subscribe to MQTT topics:
+
     ```toml
+    # Input for temperature topic
     [[inputs.mqtt_consumer]]
-      servers = ["tcp://localhost:1883"]
-      topics = ["test"]
-      data_format = "json"
+    servers = ["tcp://localhost:1883"]
+    topics = ["home/sensor/temperature"]
+    qos = 0
+    connection_timeout = "30s"
+    data_format = "value"
+    data_type = "float"
+    name_override = "temperature_reading"
+    username = "your mosquito username"
+    password = "your mosquito password"
+
+    # Input for thermostat state topic
+    [[inputs.mqtt_consumer]]
+    servers = ["tcp://localhost:1883"]
+    topics = ["home/thermostat/state"]
+    qos = 0
+    connection_timeout = "30s"
+    data_format = "json"
+    name_override = "thermostat_status"
+    password = "your mosquito password"
+
+
+    [[outputs.influxdb_v2]]
+    urls = ["http://localhost:8086"]
+    token = "replace with your api token from influxsb2"
+    organization = "replace with your org noame from influxsb2"  
+    bucket = "replace with your bucket name from influxdb2"
+
+
     ```
 
 3. **Start and enable Telegraf service**:

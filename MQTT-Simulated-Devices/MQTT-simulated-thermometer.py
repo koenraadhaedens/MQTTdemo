@@ -3,7 +3,7 @@ import time
 import random
 
 # MQTT broker details
-broker = "52.169.39.219"  # Replace with your broker address
+broker = "4.211.86.232"  # Replace with your broker address
 port = 1883
 topic = "home/sensor/temperature"
 username = "hassio"  # Replace with your MQTT broker username

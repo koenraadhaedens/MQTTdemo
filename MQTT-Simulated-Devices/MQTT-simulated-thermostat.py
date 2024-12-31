@@ -6,7 +6,7 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)  # Enable debug logs
 
-broker = "52.169.39.219"  # Replace with your MQTT broker address
+broker = "4.211.86.232"  # Replace with your MQTT broker address
 port = 1883
 
 # MQTT credentials

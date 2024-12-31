@@ -20,8 +20,11 @@ Here's a step-by-step guide to set up an MQTT message system using Mosquitto bro
     sudo systemctl enable mosquitto
     ```
 
+### Step 2: Install and Configure InfluxDB2
 
-### Step 2: Install and Configure Telegraf
+
+
+### Step 3: Install and Configure Telegraf
 1. **Install Telegraf**:
     ```bash
     sudo apt update

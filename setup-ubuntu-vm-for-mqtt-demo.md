@@ -9,11 +9,11 @@ Here's a step-by-step guide to set up an MQTT message system using Mosquitto bro
     sudo nano /etc/mosquitto/mosquitto.conf
         add following lines to config. Press ctrl O and enter to save and press ctrl X to exit nano
 
-        ```toml
-            listener 1883
-            allow_anonymous false
-            password_file /etc/mosquitto/passwd
-        ```
+ ```toml
+listener 1883
+allow_anonymous false
+password_file /etc/mosquitto/passwd
+```
 
 
 2. **Start and enable Mosquitto service**:

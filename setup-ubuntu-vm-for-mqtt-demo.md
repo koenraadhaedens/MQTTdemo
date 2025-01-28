@@ -57,6 +57,7 @@ Go to http://<your ip>:8086 to configure InfluxDB2
     [[inputs.mqtt_consumer]]
     servers = ["tcp://localhost:1883"]
     topics = ["home/sensor/temperature"]
+    # you can use this topics = ["#"] to get all topics
     qos = 0
     connection_timeout = "30s"
     data_format = "value"

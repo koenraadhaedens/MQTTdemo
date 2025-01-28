@@ -14,7 +14,9 @@ Here's a step-by-step guide to set up an MQTT message system using Mosquitto bro
     allow_anonymous false
     password_file /etc/mosquitto/passwd
 
+
     ```
+
 
 2. **Start and enable Mosquitto service**:
     ```bash

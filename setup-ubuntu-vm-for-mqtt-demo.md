@@ -11,9 +11,9 @@ Here's a step-by-step guide to set up an MQTT message system using Mosquitto bro
 
     ```toml
     
-    listener 1883
-    allow_anonymous false
-    password_file /etc/mosquitto/passwd
+        listener 1883
+        allow_anonymous false
+        password_file /etc/mosquitto/passwd
 
     ```
 

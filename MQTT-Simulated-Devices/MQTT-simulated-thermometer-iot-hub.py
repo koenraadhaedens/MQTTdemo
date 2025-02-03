@@ -5,10 +5,10 @@ import ssl
 import certifi  # Add this import
 
 # Azure IoT Hub details
-broker = "khd-iothubdemo1.azure-devices.net"
+broker = "xxxxxxxxxxxxxxxx"
 port = 8883  # IoT Hub requires secure MQTT communication
-device_id = "demothermostat"
-shared_access_key = "stgkB/pCDmHrLM8vE4WtXyWOkoIjuDBTVpVQgUzu33c="  # Replace with your Shared Access Key
+device_id = "xxxxxxxxxxxxxxxxxxxx"
+shared_access_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # Replace with your Shared Access Key
 
 # MQTT topic for IoT Hub
 topic = f"devices/{device_id}/messages/events/"  # IoT Hub requires this specific topic format

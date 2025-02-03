@@ -3,11 +3,11 @@ import time
 import random
 
 # MQTT broker details
-broker = "4.211.86.232"  # Replace with your broker address
+broker = "x.x.x.x"  # Replace with your broker address
 port = 1883
 topic = "home/sensor/temperature"
-username = "hassio"  # Replace with your MQTT broker username
-password = "myhassio"  # Replace with your MQTT broker password
+username = "xxxxxxx"  # Replace with your MQTT broker username
+password = "xxxxxxx"  # Replace with your MQTT broker password
 
 # Create an MQTT client instance with callback_api_version
 client = mqtt.Client(client_id="SensorSimulator")

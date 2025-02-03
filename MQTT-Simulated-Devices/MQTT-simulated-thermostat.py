@@ -6,12 +6,12 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)  # Enable debug logs
 
-broker = "4.211.86.232"  # Replace with your MQTT broker address
+broker = "x.x.x.x"  # Replace with your MQTT broker address
 port = 1883
 
 # MQTT credentials
-username = "hassio"  # Replace with your MQTT broker username
-password = "myhassio"  # Replace with your MQTT broker password
+username = "xxxxxxx"  # Replace with your MQTT broker username
+password = "xxxxxxxxx"  # Replace with your MQTT broker password
 
 # MQTT topics
 state_topic = "home/thermostat/state"
